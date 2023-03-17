@@ -27,7 +27,8 @@
 
 ### 1. Ideation - 사람들은 NLP로 뭘 만들까?
 
-NLP로 어떤 현실 문제를 해결하는지 조사, 분석한 발표 자료들이 여기(WEEKLY PRESENTATION)에 업로드됩니다. 
+발표 자료들이 여기(WEEKLY PRESENTATION)에 업로드됩니다. 
+NLP로 어떤 현실 문제를 해결하는지 조사, 분석한 내용 + 내 프로젝트 진행사항 공유 등이 되겠습니다. 
 
 예시)
 [Ranking resume with Natural Language Processing](https://medium.com/@cheikhgueyewane_38422/ranking-resume-with-natural-language-processing-8c4ce7dbda55)  
@@ -36,9 +37,5 @@ NLP로 어떤 현실 문제를 해결하는지 조사, 분석한 발표 자료�
 
 ### 2. 만들기 (힘 닿는 곳 까지)   
 
-유사한 문제에 대한 해결책을 찾고 배포해봅시다. 이 솔루션들은 각각 REPO에 저장되어 있습니다. 
-
-### 3. Solution 완성해서  배포하기 (최종목표!)    
-
-huggingface spaces에 업로드하는 걸 목표로 합니다 
+참가자들의 솔루션들은 각각의 REPO에 저장되고, 완성된 프로젝트들은 huggingface spaces에 배포합니다. 
 
