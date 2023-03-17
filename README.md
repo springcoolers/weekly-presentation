@@ -59,11 +59,8 @@ ex) 반복문 → max number of island → 스크린골프 계산 프로그램
     6. 논문, 학회지
     7. conference : [deview](https://deview.kr/2023)
     8. indiehackers / [futurepedia.io](http://futurepedia.io) 
-    
-    아래로 갈수록 찾기 힘들고, 전문적이고, 난이도가 높아진다
-    
 
-내가 만든 프로그램! (link) 
+
 
 ### 2# 만들기 (힘 닿는 곳 까지)
 
