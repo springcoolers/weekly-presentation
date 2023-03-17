@@ -9,9 +9,12 @@
 
 ## 💡 어떻게?  
 
-'code' 
-\#training
-'code'
+<div class="bg-blue mb-2">
+  <p>Your text here</p>
+</div>
+
+
+
 
  \# 서로 관심 있는 주제 \# 발표로 공유 \# 느슨한 프로젝트 구현 / 동기부여 / Build on Public / (응용) 실생활에 쓸 수 있는
 
@@ -38,4 +41,12 @@ NLP로 어떤 현실 문제를 해결하는지 조사, 분석한 내용 + 내 �
 (2023 봄 Pseudolab Openlab 6기) : 🔭 스터디 일정은 이 [링크](https://pseudo-lab.com/NLP-2-c5158177879c4bcab6e4106c053b44f5
 )를 확인하세요   
 
+
+<style>
+.bg-blue {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+}
+</style>
 
