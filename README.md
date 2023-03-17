@@ -45,15 +45,16 @@ ex) 반복문 → max number of island → 스크린골프 계산 프로그램
 
 ### 1# Ideation - 사람들은 NLP로 뭘 만들까?
 
-- sources &  설명
-    1. Datacamp
-    2. kaggle 
-    3. Reddit - showcases
-    4. Huggingface Spaces
-    5. Youtube, blogs
-    6. 논문, 학회지
-    7. conference : [deview](https://deview.kr/2023)
-    8. indiehackers / [futurepedia.io](http://futurepedia.io) 
+NLP로 어떤 현실 문제를 해결하는지 찾아봅니다! 
+
+Ex 1) 
+
+EX 2)
+
+Ex 3) 
+
+조사, 분석 후 발표합니다. 
+
 
 
 ### 2# 만들기 (힘 닿는 곳 까지)
