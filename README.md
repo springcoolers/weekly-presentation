@@ -1,8 +1,6 @@
 
 # GitHub에 NLP 잔디심기 2👋   
 
----
-
 ## 💡 Goal : My nlp toolbox → **apply** to real world problem solving
 
 - NLP로 해결될 법 한 real world problem idea를 찾아보기
