@@ -25,9 +25,9 @@
 
 → 다 맞습니다! 
 
-### 2 시즌 목표:
-
 ---
+
+## 2 시즌 목표
 
 <aside>
 💡 의식적 훈련: 내 toolbox → 현실 문제 풀기
@@ -39,6 +39,9 @@
 3. ultimately: 직접 하나 만들고, huggingface에 올리기 → 프리시즌 이후. 매우 장기적 목표 
 
 ex) 반복문 → max number of island → 스크린골프 계산 프로그램 
+
+---
+## 3 프로그램 구성
 
 ### 1# Ideation - 사람들은 NLP로 뭘 만들까?
 
@@ -53,13 +56,8 @@ ex) 반복문 → max number of island → 스크린골프 계산 프로그램
     8. indiehackers / [futurepedia.io](http://futurepedia.io) 
 
 
-
 ### 2# 만들기 (힘 닿는 곳 까지)
 
 ex) datacamp로 예시 보이자
 
 발표 규칙
-
-- 하나씩 print를 찍어주면서, 데이터 형태를 보여주면 좋겠다.
-- 관련된 이론들 - 상세히 발표
-
