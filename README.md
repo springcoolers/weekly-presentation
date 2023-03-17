@@ -1,26 +1,17 @@
 
 # GitHub에 NLP 잔디심기 2👋   
 
-(2023 봄 Pseudolab Openlab 6기) : 🔭 스터디 일정은 이 [링크](https://pseudo-lab.com/NLP-2-c5158177879c4bcab6e4106c053b44f5
-)를 확인하세요   
-
-
 ---
 
-## 시즌 목표
-
-<aside>
-💡 Goal : My nlp toolbox → **apply** to real world problem solving
-
-</aside>
+## 💡 Goal : My nlp toolbox → **apply** to real world problem solving
 
 - NLP로 해결될 법 한 real world problem idea를 찾아보기
 - 근사한 해결책을 찾아 모방하고 구현해보기 
-- huggingface space에 올리기 
 
-<aside>
-💡 어떻게? training / 서로 관심 있는 주제를 발표로 공유/ 느슨한 프로젝트 구현 / 동기부여 / Build on Public / (응용) 실생활에 쓸 수 있는
-</aside>
+
+## 💡 어떻게?  
+training / 서로 관심 있는 주제를 발표로 공유/ 느슨한 프로젝트 구현 / 동기부여 / Build on Public / (응용) 실생활에 쓸 수 있는
+
 
 ---
 ## github 구성
@@ -38,4 +29,9 @@ NLP로 어떤 현실 문제를 해결하는지 조사, 분석한 내용 + 내 �
 ### 2. 만들기 (힘 닿는 곳 까지)   
 
 참가자들의 솔루션들은 각각의 REPO에 저장되고, 완성된 프로젝트들은 huggingface spaces에 배포합니다. 
+
+
+(2023 봄 Pseudolab Openlab 6기) : 🔭 스터디 일정은 이 [링크](https://pseudo-lab.com/NLP-2-c5158177879c4bcab6e4106c053b44f5
+)를 확인하세요   
+
 
