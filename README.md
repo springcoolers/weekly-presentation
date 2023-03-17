@@ -28,8 +28,8 @@ NLP로 어떤 현실 문제를 해결하는지 찾아봅니다! 조사 분석 �
 
 예시)
 [Ranking resume with Natural Language Processing](https://medium.com/@cheikhgueyewane_38422/ranking-resume-with-natural-language-processing-8c4ce7dbda55)
-[How to Use NLP for Smarter Investment Decisions: Two Practical Applications] (https://medium.datadriveninvestor.com/how-to-use-nlp-for-smarter-investment-decisions-two-practical-applications-514e9db528c9) 
-[Extract Stock Sentiment from News Headlines] (https://app.datacamp.com/learn/projects/611)
+[How to Use NLP for Smarter Investment Decisions: Two Practical Applications](https://medium.datadriveninvestor.com/how-to-use-nlp-for-smarter-investment-decisions-two-practical-applications-514e9db528c9) 
+[Extract Stock Sentiment from News Headlines](https://app.datacamp.com/learn/projects/611)
 
 ### 2. 만들기 (힘 닿는 곳 까지)
 
