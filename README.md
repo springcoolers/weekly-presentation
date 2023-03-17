@@ -21,7 +21,7 @@
 </aside>
 
 ---
-## 프로그램 구성
+## github 구성
 
 ### 1. Ideation - 사람들은 NLP로 뭘 만들까?
 
