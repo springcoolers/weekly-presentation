@@ -1,5 +1,5 @@
 
-# (2023 봄 Pseudolab Openlab 6기) GitHub에 NLP 잔디심기 2👋 
+# GitHub에 NLP 잔디심기 2👋 (2023 봄 Pseudolab Openlab 6기)  
 🔭 스터디 일정은 이 링크를 확인하세요 : https://pseudo-lab.com/NLP-2-c5158177879c4bcab6e4106c053b44f5
 
 
