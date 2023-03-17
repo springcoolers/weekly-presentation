@@ -1,9 +1,7 @@
 
 # GitHub에 NLP 잔디심기 2👋 
-(2023 봄 Pseudolab Openlab 6기)  
-🔭 스터디 일정은 이 링크를 확인하세요 : https://pseudo-lab.com/NLP-2-c5158177879c4bcab6e4106c053b44f5
 
-
+(2023 봄 Pseudolab Openlab 6기) : 🔭 스터디 일정은 이 링크를 확인하세요 : https://pseudo-lab.com/NLP-2-c5158177879c4bcab6e4106c053b44f5
 
 ---
 
@@ -14,9 +12,9 @@
 
 </aside>
 
-1. NLP로 해결될 법 한 현실의 문제 찾기
-2. 1과 유사한 문제에 대한 해결책을 찾고 (최대한 열심히) 구현해보기 
-3. huggingface space에 올리기 → (궁극적 목표)
+1. NLP로 해결될 법 한 real world problem 찾기
+2. 1과 유사한 문제에 대한 해결책을 찾고, 모방하고 구현해보기 
+3. 1을 해결해서 huggingface space에 올리기 (궁극적 목표)
 
 💡  training / 서로 관심 있는 주제를 발표로 공유/ 느슨한 프로젝트 구현 / 동기부여 / Build on Public / (응용) 실생활에 쓸 수 있는
 
@@ -35,8 +33,10 @@ NLP로 어떤 현실 문제를 해결하는지 찾아봅니다! 조사 분석 �
 
 ### 2. 만들기 (힘 닿는 곳 까지)
 
-ex) datacamp로 예시 보이자
+유사한 문제에 대한 해결책을 찾고 배포해봅시다. 
 
-발표 규칙
 
-### 3. 만들기 
+### 3. Solution으로 패킹해서 배포하기 (최종목표!)  
+
+
+
