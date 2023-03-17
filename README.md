@@ -12,8 +12,8 @@
 
 </aside>
 
-- NLP로 해결될 법 한 real world problem을 정의하고
-- 유사한 문제에 대한 해결책을 찾아 모방하고 구현해보기 
+- NLP로 해결될 법 한 real world problem idea를 찾아보기
+- 근사한 해결책을 찾아 모방하고 구현해보기 
 - huggingface space에 올리기 
 
 <aside>
@@ -25,21 +25,18 @@
 
 ### 1. Ideation - 사람들은 NLP로 뭘 만들까?
 
-NLP로 어떤 현실 문제를 해결하는지 조사, 분석한 발표 자료들이 여기에 업로드됩니다. 
+NLP로 어떤 현실 문제를 해결하는지 조사, 분석한 발표 자료들이 여기(WEEKLY PRESENTATION)에 업로드됩니다. 
 
 예시)
 [Ranking resume with Natural Language Processing](https://medium.com/@cheikhgueyewane_38422/ranking-resume-with-natural-language-processing-8c4ce7dbda55)  
 [How to Use NLP for Smarter Investment Decisions: Two Practical Applications](https://medium.datadriveninvestor.com/how-to-use-nlp-for-smarter-investment-decisions-two-practical-applications-514e9db528c9)   
 [Extract Stock Sentiment from News Headlines](https://app.datacamp.com/learn/projects/611)  
 
-### 2. 만들기 (힘 닿는 곳 까지)
+### 2. 만들기 (힘 닿는 곳 까지)   
 
-유사한 문제에 대한 해결책을 찾고 배포해봅시다.
+유사한 문제에 대한 해결책을 찾고 배포해봅시다. 이 솔루션들은 각각 REPO에 저장되어 있습니다. 
 
-솔루션들은 개별 REPO에 저장되어 있습니다. 
+### 3. Solution 완성해서  배포하기 (최종목표!)    
 
-
-### 3. Solution으로 패킹해서 배포하기 (최종목표!)  
-
-
+huggingface spaces에 업로드하는 걸 목표로 합니다 
 
