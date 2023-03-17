@@ -11,11 +11,6 @@
 
  의식적 훈련 / 서로 관심 있는 주제 / 발표로 공유 / 느슨한 프로젝트 구현 / 동기부여 / Build on Public / (응용) 실생활에 쓸 수 있는
 
-|   Your text here   |
-|--------------------|
-| <span style="color: white; background-color: blue; padding: 10px;">Your text here</span> |
-
-
 ---
 ## github 구성
 
