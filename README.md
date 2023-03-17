@@ -9,14 +9,11 @@
 
 ## 💡 어떻게?  
 
-<div class="bg-blue mb-2">
-  <p>Your text here</p>
-</div>
+ 의식적 훈련 / 서로 관심 있는 주제 / 발표로 공유 / 느슨한 프로젝트 구현 / 동기부여 / Build on Public / (응용) 실생활에 쓸 수 있는
 
-
-
-
- \# 서로 관심 있는 주제 \# 발표로 공유 \# 느슨한 프로젝트 구현 / 동기부여 / Build on Public / (응용) 실생활에 쓸 수 있는
+|   Your text here   |
+|--------------------|
+| <span style="color: white; background-color: blue; padding: 10px;">Your text here</span> |
 
 
 ---
@@ -42,11 +39,4 @@ NLP로 어떤 현실 문제를 해결하는지 조사, 분석한 내용 + 내 �
 )를 확인하세요   
 
 
-<style>
-.bg-blue {
-  background-color: blue;
-  color: white;
-  padding: 10px;
-}
-</style>
 
