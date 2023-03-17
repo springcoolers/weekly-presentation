@@ -1,6 +1,19 @@
 
 # GitHub에 NLP 잔디심기 2👋   
 
+스터디 자료입니다   
+
+|   Your text here   |
+|--------------------|
+| <span style="color: white; background-color: blue; padding: 10px;">Your text here</span> |
+
+
+<style>
+table {
+  border-collapse: collapse;
+}
+</style>
+
 ## 💡 Goal : My nlp toolbox → **apply** to real world problem solving
 
 - NLP로 해결될 법 한 real world problem idea를 찾아보기
