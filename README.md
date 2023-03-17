@@ -17,7 +17,7 @@
 - huggingface space에 올리기 
 
 <aside>
-💡  training / 서로 관심 있는 주제를 발표로 공유/ 느슨한 프로젝트 구현 / 동기부여 / Build on Public / (응용) 실생활에 쓸 수 있는
+💡 어떻게? training / 서로 관심 있는 주제를 발표로 공유/ 느슨한 프로젝트 구현 / 동기부여 / Build on Public / (응용) 실생활에 쓸 수 있는
 </aside>
 
 ---
