@@ -31,6 +31,8 @@ NLP로 어떤 현실 문제를 해결하는지 조사, 분석한 내용 + 내 �
 
 참가자들의 솔루션들은 각각의 REPO에 저장되고, 완성된 프로젝트들은 huggingface spaces에 배포합니다. 
 
+- [20230405](https://github.com/springcoolers/weekly-presentation/20230405) (1주차) : semantle 일본어 버전
+
 --- 
 
 (2023 봄 Pseudolab Openlab 6기) : 🔭 스터디 일정은 이 [링크](https://pseudo-lab.com/NLP-2-c5158177879c4bcab6e4106c053b44f5
