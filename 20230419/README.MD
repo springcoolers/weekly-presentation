@@ -269,4 +269,3 @@ model 2 - Bing Chat에 일정 시점 이후에 등장한/trending 단어들을 �
 
 - **[The ChatGPT Startup Bible: Your Guide to Building and Growing Your Business with AI](https://www.amazon.com/dp/B0C1J3DCRQ/ref=sspa_dk_detail_3?psc=1&pd_rd_i=B0C1J3DCRQ&pd_rd_w=DzfR0&content-id=amzn1.sym.ecc09a2f-2609-4555-bb4e-a89772637d1c&pf_rd_p=ecc09a2f-2609-4555-bb4e-a89772637d1c&pf_rd_r=4NRCX4PH862HX9117AH9&pd_rd_wg=dCzCg&pd_rd_r=8f265312-abaa-4dac-8716-351412997216&s=books&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyVkI2REVMQ0lWSVhBJmVuY3J5cHRlZElkPUEwMTkxNjc1MVNJTUg3WUI5MVgzUCZlbmNyeXB0ZWRBZElkPUEwNjA2NjM3M0VXM01ZVjRXRUJPNCZ3aWRnZXROYW1lPXNwX2RldGFpbF90aGVtYXRpYyZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=)**
 
-## 파인 튜닝 (다른분이 맡아주면 좋겠다)
