@@ -48,16 +48,13 @@
 ## 도와줘요 챗GPT
 
 아래와 같은 프롬프트를 입력했습니다. 
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ae0efc93-6ea0-4dad-a6bb-bf338ed1457c/Untitled.png)
+![image](https://github.com/springcoolers/weekly-presentation/assets/49356933/ddb969a3-5c33-4c00-b17b-79b30f426033)
 
 이후 텍스트를 입력했습니다. 
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/df1656e4-70f4-4bac-bf2e-e476d17fbd3a/Untitled.png)
+![image](https://github.com/springcoolers/weekly-presentation/assets/49356933/4f9857cb-92f1-4d2e-8ade-b39b0766a52c)
 
 아래와 같은 답변이 나왔구요
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/99353a9b-3800-4077-a1b5-073b07880455/Untitled.png)
+![image](https://github.com/springcoolers/weekly-presentation/assets/49356933/3e7fb33d-5246-48c6-b910-4e235b821f33)
 
 - 그냥 저 목록을 그대로 bingchat / google trend같은데에 던지면, 생성일자와 뜻이 나올 듯
 - 그 데이터로 glossary를 구축한다.
@@ -65,16 +62,17 @@
 ## Bingchat에 던지기
 
 그다지 결과가 좋지 않다. 데이터가 없는걸까? 
+![image](https://github.com/springcoolers/weekly-presentation/assets/49356933/97592832-d298-4bd1-831f-105eb0d43a77)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4fba955e-cece-46e7-be72-1998cfb598dd/Untitled.png)
 
 ## Bard에 던지기
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a6c5aaab-03ba-4005-8f08-ffce7fe753da/Untitled.png)
+![image](https://github.com/springcoolers/weekly-presentation/assets/49356933/3b31d236-c530-4dc1-b60a-c0cabb5916b8)
 
 뭔가 토탈 서치 카운트가 이상합니다. 
+![image](https://github.com/springcoolers/weekly-presentation/assets/49356933/a1a3dc5a-f49b-4128-acd0-92a892902aa9)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/481a944e-2094-4be0-8adb-6f7c8df9a048/Untitled.png)
+
 
 ## 좋아 문제는
 
