@@ -1,5 +1,5 @@
 
-# GitHub에 NLP 잔디심기 2👋   
+# github에 NLP 잔디심기 2👋   
 
 스터디 자료입니다   
 
