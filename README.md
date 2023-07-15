@@ -1,42 +1,55 @@
+# Custom Sentimental NER Model
 
-# github에 NLP 잔디심기 2👋   
+프로젝트 기획
 
-스터디 자료입니다   
+목표 : 개인이 주기적으로 작성하는 글 속에 존재하는 주된 감정(정서) 와 단어 추출
 
+## 1. 데이터셋
 
-## 💡 Goal : My nlp toolbox → **apply** to real world problem solving
-
-- NLP로 해결될 법 한 real world problem idea를 찾아보기
-- 근사한 해결책을 찾아 모방하고 구현해보기 
-
-
-## 💡 어떻게?  
-
- 의식적 훈련 / 서로 관심 있는 주제 / 발표로 공유 / 느슨한 프로젝트 구현 / 동기부여 / Build on Public / (응용) 실생활에 쓸 수 있는
-
----
-## github 구성
-
-### 1. Ideation - 사람들은 NLP로 뭘 만들까?
-
-발표 자료들이 여기(WEEKLY PRESENTATION)에 업로드됩니다. 
-NLP로 어떤 현실 문제를 해결하는지 조사, 분석한 내용 + 내 프로젝트 진행사항 공유 등이 되겠습니다. 
-
-예시)
-[Ranking resume with Natural Language Processing](https://medium.com/@cheikhgueyewane_38422/ranking-resume-with-natural-language-processing-8c4ce7dbda55)  
-[How to Use NLP for Smarter Investment Decisions: Two Practical Applications](https://medium.datadriveninvestor.com/how-to-use-nlp-for-smarter-investment-decisions-two-practical-applications-514e9db528c9)   
-[Extract Stock Sentiment from News Headlines](https://app.datacamp.com/learn/projects/611)  
-
-### 2. 만들기 (힘 닿는 곳 까지)   
-
-참가자들의 솔루션들은 각각의 REPO에 저장되고, 완성된 프로젝트들은 huggingface spaces에 배포합니다. 
-
-- [20230405](https://github.com/springcoolers/weekly-presentation/20230405) (1주차) : semantle 일본어 버전
-
---- 
-
-(2023 봄 Pseudolab Openlab 6기) : 🔭 스터디 일정은 이 [링크](https://pseudo-lab.com/NLP-2-c5158177879c4bcab6e4106c053b44f5
-)를 확인하세요   
+- 개인 에세이 글
+- 한국어 말뭉치
+  - https://corpus.korean.go.kr/request/corpusRegist.do
+  - https://www.dacon.io/competitions/official/236037/data
+  - https://aida.kisti.re.kr/data/8d0fd6f4-4bf9-47ae-bd71-7d41f01ad9a6
+- 정신의학칼럼 - 크롤링
+  - http://www.psychiatricnews.net/
 
 
+## 2. 활용방안
+  - 개인의 글을 넣었을 때, 그 사람의 글과 정서에 맞는 단어를 추출
+  - 새로운 글을 작성했을 때, 엔티티태깅된 결과를 보여줌
+  - 실제 글,단어를 쓸 때 그 감정을 느꼈는지 인터뷰 / streamlit 을 통한 manual entity tagging 을 통해 정확도 개선 시도
 
+## 3. 모델 아키텍쳐
+
+  - MultinomialNB : 다변량 범주형 나이브 베이즈 분류기
+    개인이 작성한 글을 넣고 감정을 분류하기 위해 사용
+  - LIMA : Local Interpretable Model Agnostic Explanation, 모델에 상관하지 않고 각 요소의 영향력 설명하는 라이브러리
+    - 분류에 도움이 된 주요 키워드 확보를 하기 위해 사용
+    - 단어 임베딩 값으로 주요 정서 단어와 유사한 상위 top100개 추출(?)
+  
+  - 각 단어별 엔티티 부여
+    [회사, 퇴근, 야근] - [짜증, 짜증, 짜증]
+  - bi-LSTM + CRF : 양방향 LSTM + (bilou등의) 조건부 엔티티
+    정의된 단어리스트를 활용하여, 문장 속 특정 단어의 엔티티를 달아주기 위해 사용
+    학습에 충분한 수준의 실제 개인의 글을 수집할 수 있는지 확인 필요
+
+## 4. 추가 리서치 해볼만 한 것들
+
+  - ABSA 
+  - LLM 활용 - GPT3 무료버전 사용을 목표로!
+
+### 4-1. 유사 주제로 진행한 부분
+
+  - https://github.com/vermashivam679/YouTube_comments_NLP
+  - https://www.dacon.io/competitions/official/236037/data
+  - https://aida.kisti.re.kr/data/8d0fd6f4-4bf9-47ae-bd71-7d41f01ad9a6
+
+### 4-2. 앞선 서비스
+
+  - gpt를 사용하여 심리상담 서비스를 만든 회사 : Koko
+    - https://www.loom.com/share/d9b5a26c644640ba95bb413147e41766
+
+  - 심리 상담 기법 중 CBT를 활용하는 방법도 고민
+    - http://www.cbt.or.kr/content/info/info.jsp
+    - https://www.sciencedirect.com/science/article/pii/S1877050922014521
