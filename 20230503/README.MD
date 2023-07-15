@@ -141,3 +141,179 @@
 - https://github.com/kakaobrain/kogpt
 - https://arxiv.org/abs/1706.03762
 - https://m.blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=baek2sm&logNo=222176799509&categoryNo=99&proxyReferer=
+
+
+
+# 나만의 AI 비서 만들기 [기말발표: BERTOCR and 법원판결예측]
+
+작성자: 우현 문
+작성 팀: S6_깃헙에 NLP  잔디심기 2
+기술 분류: 자연어처리
+상태: Not started
+최종 편집 일시: 2023년 6월 28일 오후 9:26
+
+# 나만의 AI 비서
+
+---
+
+## 원래 계획과 변경사항
+
+- BERT와 GPT같은 언어모델들을 파인튜닝하여 메뉴얼을 이해하고 이를 통해 요약, 사람대신 업무를 수행해주는 고급 업무 자동화 NLP 모델을 만들 계획이었음.
+- 그러나 나는 언어모델들을 세부적으로 분석및 연구하여 모델의 성능을 향상하는 방법은 알지만, 아직 데이터를 직접 정제하고 모델을 불러와서 직접 파인튜닝해본 경험이 없어 어려움에 봉착함.
+- 때문에 나만의 AI 비서 프로젝트는 중장기적인 프로젝트로 정하고, 이번 프로젝트는 나만의 AI 비서 프로젝트를 보다 잘 진행할 수 있도록 하기위한 디딤돌 프로젝트로 선정함.
+- 이번 프로젝트는 BERT와 결합된 OCR(**Optical Character Recognition**)과 DACON의 “**법원 판결 예측 AI 경진대회**”준비로 진행함.
+
+---
+
+# OCR
+
+![ocr.png](%E1%84%82%E1%85%A1%E1%84%86%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%20AI%20%E1%84%87%E1%85%B5%E1%84%89%E1%85%A5%20%E1%84%86%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%86%AF%E1%84%80%E1%85%B5%20%5B%E1%84%80%E1%85%B5%E1%84%86%E1%85%A1%E1%86%AF%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20BERTOCR%20and%20%E1%84%87%20f50c6f1cc98840e29974016af11cbf07/ocr.png)
+
+- OCR은 “Optical Character Recognition”의 약자로, 우리말로 하면 “광학 문자 인식”임.
+- 사람이 쓰거나 기계로 인쇄한 문자의 영상을 이미지 스캐너로 획득하여 기계가 읽을 수 있는 문자로 변환하는 것.
+
+---
+
+## 기존 OCR의 문제점
+
+- CV만을 이용해 문자를 인식
+- 때문에 노이즈가 있는 데이터에 취약함
+- 이를 해결하기위해 디노이징 기법이 사용되고 있지만 이 역시 CV에 국한된 기법임
+- 이러한 문제를 해결하고자 나는 OCR에 NLP를 적용하여, 문맥으로 노이즈 데이터를 예측할 수 있는 모델을 만듦
+
+---
+
+## 아이디어 착안
+
+- 우리는 길을 가다가 표지판이나 간판의 중간중간 단어가 잘 보이지 않을때 시각적인 정보 뿐만 아니라 문맥이나 상황을 고려하여 이를 유추함
+- 이러한 내 경험을 바탕으로 아이디어를 구성
+
+---
+
+## 아이디어
+
+![BERTOTR.png](%E1%84%82%E1%85%A1%E1%84%86%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%20AI%20%E1%84%87%E1%85%B5%E1%84%89%E1%85%A5%20%E1%84%86%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%86%AF%E1%84%80%E1%85%B5%20%5B%E1%84%80%E1%85%B5%E1%84%86%E1%85%A1%E1%86%AF%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20BERTOCR%20and%20%E1%84%87%20f50c6f1cc98840e29974016af11cbf07/BERTOTR.png)
+
+- 기존의 OTR모델에 언어모델인 BERT를 추가
+- 처음에 문자 데이터를 OTR모델에 입력하고 출력값을 통해 신뢰도를 계산
+- 신뢰가 부족한 데이터는 그 다음 언어모델인 BERT로 입력후 다시 출력
+- BERT역시 해당 출력값에 신뢰도가 포함되어있는데, 이때 신뢰도가 평균이상인 값들을 출력
+- 이 출력값들을 다시 이미지로 변환하고 이 이미지를 원래 노이즈 이미지와 코사인 유사도를 이용해 유사도 비교
+- 최종적으로 출력값의 BERT 신뢰도와 원래 이미지와의 유사도를 곱하여 가장 큰 값을 출력
+
+![noise_data.png](%E1%84%82%E1%85%A1%E1%84%86%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%20AI%20%E1%84%87%E1%85%B5%E1%84%89%E1%85%A5%20%E1%84%86%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%86%AF%E1%84%80%E1%85%B5%20%5B%E1%84%80%E1%85%B5%E1%84%86%E1%85%A1%E1%86%AF%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20BERTOCR%20and%20%E1%84%87%20f50c6f1cc98840e29974016af11cbf07/noise_data.png)
+
+- 예를들어 위와같은 노이즈 데이터가 있을때 처음 OCR 모델이 ‘selling’이라는 단어를 ‘age’라고 예측 했고 이 신뢰도가 0.04이고 모델러가 신뢰도 상수 k = 0.5라고 가정했다면, 이 단어는 신뢰할 수 없는 단어임.
+- OCR 예측: “was voted top [age] animespecial effects DVD”
+- 신뢰도가 낮은 단어 ‘age’를 [MASK] token으로 변경후 BERT 모델에 입력(“was voted top [MASK] animespecial effects DVD”)
+- BERT는 앞, 뒤 문맥을 파악하여 [MASK] token을 예측: [selling=0.4, rate=0.3, gel=0.1, apple=0.1, banana=0.1]
+- 이때 연산효율을 높이기 위해 평균값((0.4+0.3+0.1+0.1+0.1)/5 = 0.3)보다 작은 값은 삭제 : [selling=0.4, rate=0.3]
+
+![cosine_similarity.png](%E1%84%82%E1%85%A1%E1%84%86%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%20AI%20%E1%84%87%E1%85%B5%E1%84%89%E1%85%A5%20%E1%84%86%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%86%AF%E1%84%80%E1%85%B5%20%5B%E1%84%80%E1%85%B5%E1%84%86%E1%85%A1%E1%86%AF%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20BERTOCR%20and%20%E1%84%87%20f50c6f1cc98840e29974016af11cbf07/cosine_similarity.png)
+
+- 이 값들을 이미지로 변환한 뒤 노이즈 이미지와 코사인 유사도를 도출 : [selling=0.9, rate=0.3]
+- 최종적으로 BERT 점수와 코사인유사도 점수를 곱해 가장 큰 값 도출 : argmax([selling=0.6*0.9=0.54, rate=0.5*0.3=0.15]) = selling
+
+---
+
+## 실험 및 결과
+
+### 모델 및 데이터셋
+
+- OCR 모델 : easyocr 모델 사용
+- BERT 모델 : 허깅페이스 모델 사용
+- 데이터셋으로 Wikipedia (780만 문장), CNN dailymail (30만 문장) 그리고 Fiction (2000 문장) 사용
+
+[GitHub - JaidedAI/EasyOCR: Ready-to-use OCR with 80+ supported languages and all popular writing scripts including Latin, Chinese, Arabic, Devanagari, Cyrillic and etc.](https://github.com/jaidedai/easyocr)
+
+[EasyOCR Python Tutorial with Examples - MLK - Machine Learning Knowledge](https://machinelearningknowledge.ai/easyocr-python-tutorial-with-examples/)
+
+[](https://huggingface.co/docs/transformers/main/en/modeldoc/bert)
+
+[Wikipedia Sentences](https://www.kaggle.com/datasets/mikeortman/wikipedia-sentences)
+
+[GitHub - abisee/cnn-dailymail: Code to obtain the CNN / Daily Mail dataset (non-anonymized) for summarization](https://github.com/abisee/cnn-dailymail)
+
+[Fiction stories dataset](https://www.kaggle.com/datasets/jayashree4/fiction)
+
+### 결과
+
+![결과1.png](%E1%84%82%E1%85%A1%E1%84%86%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%20AI%20%E1%84%87%E1%85%B5%E1%84%89%E1%85%A5%20%E1%84%86%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%86%AF%E1%84%80%E1%85%B5%20%5B%E1%84%80%E1%85%B5%E1%84%86%E1%85%A1%E1%86%AF%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20BERTOCR%20and%20%E1%84%87%20f50c6f1cc98840e29974016af11cbf07/%25EA%25B2%25B0%25EA%25B3%25BC1.png)
+
+![결과2.png](%E1%84%82%E1%85%A1%E1%84%86%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%20AI%20%E1%84%87%E1%85%B5%E1%84%89%E1%85%A5%20%E1%84%86%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%86%AF%E1%84%80%E1%85%B5%20%5B%E1%84%80%E1%85%B5%E1%84%86%E1%85%A1%E1%86%AF%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20BERTOCR%20and%20%E1%84%87%20f50c6f1cc98840e29974016af11cbf07/%25EA%25B2%25B0%25EA%25B3%25BC2.png)
+
+- Conventional OCR : OCR
+- OCR and BERT : OCR + BERT
+- BERTOCR : OCR + BERT + Cosine Similarity
+- 내가 제안한 BERTOCR 모델이 평균적으로 Conventional OCR 보다 333.67% 더 좋았고, OCR and BERT 보다 3.62% 더 좋았다(유사도 비교 블럭의 유무 차이)
+
+---
+
+# 법원 판결 예측
+
+---
+
+## 게임 설명
+
+![train.png](%E1%84%82%E1%85%A1%E1%84%86%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%20AI%20%E1%84%87%E1%85%B5%E1%84%89%E1%85%A5%20%E1%84%86%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%86%AF%E1%84%80%E1%85%B5%20%5B%E1%84%80%E1%85%B5%E1%84%86%E1%85%A1%E1%86%AF%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20BERTOCR%20and%20%E1%84%87%20f50c6f1cc98840e29974016af11cbf07/train.png)
+
+![test.png](%E1%84%82%E1%85%A1%E1%84%86%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%20AI%20%E1%84%87%E1%85%B5%E1%84%89%E1%85%A5%20%E1%84%86%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%86%AF%E1%84%80%E1%85%B5%20%5B%E1%84%80%E1%85%B5%E1%84%86%E1%85%A1%E1%86%AF%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20BERTOCR%20and%20%E1%84%87%20f50c6f1cc98840e29974016af11cbf07/test.png)
+
+- test dataset : first_party, second_party, facts와 first_party_winner로 구성
+- first_party_winner가 1이면 first_party가 재판에서 이김, first_party_winner가 0이면 first_party가 재판에서 짐
+- train dataset :  first_party, second_party와 facts로 구성
+- train dataset으로 모델을 학습시켜, 학습시킨 모델로 test dataset를 잘 맞추는 사람이 승리
+
+[월간 데이콘 법원 판결 예측 AI 경진대회](https://dacon.io/competitions/official/236112/overview/description)
+
+---
+
+## 방법
+
+### 데이터 불균형 해결
+
+![unbalance.png](%E1%84%82%E1%85%A1%E1%84%86%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%20AI%20%E1%84%87%E1%85%B5%E1%84%89%E1%85%A5%20%E1%84%86%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%86%AF%E1%84%80%E1%85%B5%20%5B%E1%84%80%E1%85%B5%E1%84%86%E1%85%A1%E1%86%AF%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20BERTOCR%20and%20%E1%84%87%20f50c6f1cc98840e29974016af11cbf07/unbalance.png)
+
+- train datatset에 first_party_winner가 1인 데이터가 0인것에 비해 두배가량 많음
+- 데이터셋의 불균형으로 모델이 편향적으로 학습할 수 있음
+- 때문에 이 문제를 다음과 같이 해결
+    - 다운샘플링 : 지금 first_party_winner = 0: 800여개, first_party_winner = 1: 1600여개 이므로 first_party_winner = 1을 랜덤으로 800여개를 추출하여 두 데이터셋 사이의 균형을 맞춤
+    - 업샘플링 : 위 다음샘플링과 반대로, first_party_winner = 0 데이터의 수를 상대적으로 늘려 두 데이터셋의 균형을 맞춤
+        - 예를들어 first_party: tony/ second_party: jack/ fact: tony hit jack/ first_party_winner = 0 데이터셋을 first_party: tony/ second_party: jack/ fact: jack hit tony/ first_party_winner = 1로 변환(이러면 데이터셋의 균형이 맞음)
+        
+         
+        
+
+### 이름 변환 및 추가
+
+![data2.png](%E1%84%82%E1%85%A1%E1%84%86%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%20AI%20%E1%84%87%E1%85%B5%E1%84%89%E1%85%A5%20%E1%84%86%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%86%AF%E1%84%80%E1%85%B5%20%5B%E1%84%80%E1%85%B5%E1%84%86%E1%85%A1%E1%86%AF%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20BERTOCR%20and%20%E1%84%87%20f50c6f1cc98840e29974016af11cbf07/data2.png)
+
+![data.png](%E1%84%82%E1%85%A1%E1%84%86%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%20AI%20%E1%84%87%E1%85%B5%E1%84%89%E1%85%A5%20%E1%84%86%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%86%AF%E1%84%80%E1%85%B5%20%5B%E1%84%80%E1%85%B5%E1%84%86%E1%85%A1%E1%86%AF%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20BERTOCR%20and%20%E1%84%87%20f50c6f1cc98840e29974016af11cbf07/data.png)
+
+---
+
+- dataset에 다양한 이름들이 등장, 때문에 모델이 누가 누구인지 학습하기가 어려움
+- 때문에 first_party와 second_party 이름들을 tony와 jack으로 통일
+- 약자의 경우에도 고려해서 변환
+- 예를들어 Monkey Banana == MB
+
+![data3.png](%E1%84%82%E1%85%A1%E1%84%86%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%20AI%20%E1%84%87%E1%85%B5%E1%84%89%E1%85%A5%20%E1%84%86%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%86%AF%E1%84%80%E1%85%B5%20%5B%E1%84%80%E1%85%B5%E1%84%86%E1%85%A1%E1%86%AF%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20BERTOCR%20and%20%E1%84%87%20f50c6f1cc98840e29974016af11cbf07/data3.png)
+
+- 모델이 first_party와 second_party을 더욱 알기쉽게 하기위해 facts 데이터셋 앞부분에  first_party와 second_party 이름인 tony와 jack 추가
+
+---
+
+## 결과
+
+정확도 : 0.52903
+
+## 레퍼런스 / 학습 자료
+
+- [https://ratsgo.github.io/nlpbook/docs/language_model/tr_technics/#norm--레이어-정규화](https://ratsgo.github.io/nlpbook/docs/language_model/tr_technics/#norm--%EB%A0%88%EC%9D%B4%EC%96%B4-%EC%A0%95%EA%B7%9C%ED%99%94)
+- [https://korquad.github.io/](https://korquad.github.io/)
+- [https://github.com/SKT-AI/KoGPT2](https://github.com/SKT-AI/KoGPT2)
+- [https://github.com/kakaobrain/kogpt](https://github.com/kakaobrain/kogpt)
+- [https://arxiv.org/abs/1706.03762](https://arxiv.org/abs/1706.03762)
+- [https://m.blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=baek2sm&logNo=222176799509&categoryNo=99&proxyReferer=](https://m.blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=baek2sm&logNo=222176799509&categoryNo=99&proxyReferer=)
+
+---
