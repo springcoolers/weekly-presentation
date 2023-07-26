@@ -1,3 +1,6 @@
 [submodule "20230405/semantle-jp"]
 	path = 20230405/semantle-jp
 	url = https://github.com/sim-so/semantle-jp.git
+[submodule "semantle-jp-with-chat"]
+	path = semantle-jp-with-chat
+	url = https://github.com/sim-so/semantle-jp-with-chat
