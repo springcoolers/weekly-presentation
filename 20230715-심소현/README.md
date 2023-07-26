@@ -1,4 +1,5 @@
-# Play a Game with LLM
+# Play the Game with LLM
+> [Demo 바로가기](https://huggingface.co/spaces/sim-so/semantle-jp-with-chat)
 
 ## 0. 지난 이야기: 그 동안의 결과물
 
