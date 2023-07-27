@@ -4,3 +4,6 @@
 [submodule "semantle-jp-with-chat"]
 	path = semantle-jp-with-chat
 	url = https://github.com/sim-so/semantle-jp-with-chat
+[submodule "20230715-심소현/semantle-jp-with-chat"]
+	path = 20230715-심소현/semantle-jp-with-chat
+	url = /Users/simso/Project/semantle-jp-with-chat
