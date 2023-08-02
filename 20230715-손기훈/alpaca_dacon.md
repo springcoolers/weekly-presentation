@@ -6,7 +6,7 @@
 
 - GPT, llama, Alpaca, palm …etc
 
-![llm 그림.png](CausalLM%20for%20parameter%20tuning%20and%20classification(f%20bfd645a65c9c442e9a3d1be2a7f987b1/llm_%25EA%25B7%25B8%25EB%25A6%25BC.png)
+![llm_paint.png](asstes/llm_paint.png)
 
 - 이전의 입력 토큰을 통해 다음 토큰을 생성하는 자기회귀적 모델이다. 이전의 문맥을 반영하여 입력에 대한 출력을 내놓기 때문에 Causal LanguageModel로 불린다.
 
