@@ -6,7 +6,7 @@
 
 - GPT, llama, Alpaca, palm …etc
 
-![llm_paint.png](asstes/llm_paint.png)
+![llm_paint.png](asstes/llm_paing.png)
 
 - 이전의 입력 토큰을 통해 다음 토큰을 생성하는 자기회귀적 모델이다. 이전의 문맥을 반영하여 입력에 대한 출력을 내놓기 때문에 Causal LanguageModel로 불린다.
 
