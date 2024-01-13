@@ -2,7 +2,7 @@
 
 # 1. 프로젝트 요약
 
-![Untitled](%E1%84%80%E1%85%B5%E1%86%BA%E1%84%8C%E1%85%A1%E1%86%AB%E1%84%89%E1%85%B5%E1%86%B7%202+3%20%E1%84%8E%E1%85%AC%E1%84%8C%E1%85%A9%E1%86%BC%20%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20f752e38993954a73adb6de055145b1ce/Untitled.png)
+![Untitled](https://file.notion.so/f/f/7363233d-91c2-4873-8a2f-afb06862effa/9e8abcbe-f25b-4333-b82e-2b587fe1e8f2/Untitled.png?id=b17dbb18-7da1-4f04-b039-22c35cd2a0aa&table=block&spaceId=7363233d-91c2-4873-8a2f-afb06862effa&expirationTimestamp=1705276800000&signature=Pey7RlfeLJLXc1ibFJfX0HB3gQEwupbHDawtQYX9dao&downloadName=Untitled.png)
 
  
 
