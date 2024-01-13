@@ -2,11 +2,7 @@
 
 # 1. 프로젝트 요약
 
-<<<<<<< HEAD
-![example](https://file.notion.so/f/f/7363233d-91c2-4873-8a2f-afb06862effa/9e8abcbe-f25b-4333-b82e-2b587fe1e8f2/Untitled.png?id=b17dbb18-7da1-4f04-b039-22c35cd2a0aa&table=block&spaceId=7363233d-91c2-4873-8a2f-afb06862effa&expirationTimestamp=1705276800000&signature=Pey7RlfeLJLXc1ibFJfX0HB3gQEwupbHDawtQYX9dao&downloadName=Untitled.png)
-=======
-![Untitled](https://file.notion.so/f/f/7363233d-91c2-4873-8a2f-afb06862effa/9e8abcbe-f25b-4333-b82e-2b587fe1e8f2/Untitled.png?id=b17dbb18-7da1-4f04-b039-22c35cd2a0aa&table=block&spaceId=7363233d-91c2-4873-8a2f-afb06862effa&expirationTimestamp=1705276800000&signature=Pey7RlfeLJLXc1ibFJfX0HB3gQEwupbHDawtQYX9dao&downloadName=Untitled.png)
->>>>>>> 5d87ca73a04df5c4525844cc75ab9330cd181204
+![example]( )
 
  
 
@@ -133,7 +129,7 @@ print(answer)
         - 대규모 데이터셋과 긴 트레이닝: RoBERTa는 BERT보다 더 많은 데이터와 더 긴 트레이닝 시간을 사용하여 모델을 훈련
         - BERT의 트레이닝 과정에 포함된 NSP 태스크를 RoBERTa는 제거
         
-        ![example](https://file.notion.so/f/f/7363233d-91c2-4873-8a2f-afb06862effa/a8a0d790-9216-4a94-82cc-1c76893e8ac2/Untitled.png?id=6011e84a-ea34-45f6-b531-82beb9c2b869&table=block&spaceId=7363233d-91c2-4873-8a2f-afb06862effa&expirationTimestamp=1705276800000&signature=i_zB4BxX5T85cIanzLR2hmd1M5HhqHLRSzXuGy8txBQ&downloadName=Untitled.png)
+        ![example]( )
         
 - 학습 데이터셋
     - Fine tuned on English and Russian QA datasets
@@ -152,7 +148,7 @@ print(answer)
 
 - koelectra-base 모델구조
     
-    ![example](https://file.notion.so/f/f/7363233d-91c2-4873-8a2f-afb06862effa/a8a0d790-9216-4a94-82cc-1c76893e8ac2/Untitled.png?id=6011e84a-ea34-45f6-b531-82beb9c2b869&table=block&spaceId=7363233d-91c2-4873-8a2f-afb06862effa&expirationTimestamp=1705276800000&signature=i_zB4BxX5T85cIanzLR2hmd1M5HhqHLRSzXuGy8txBQ&downloadName=Untitled.png)
+    ![example]( )
     
     [참고자료](https://tech.scatterlab.co.kr/electra-review/)1, [논문](https://arxiv.org/abs/2003.10555)
     
@@ -211,7 +207,7 @@ tokenizer .encode('당혹스럽고 속상해')
     
 - tokenizer
 
-![example](https://file.notion.so/f/f/7363233d-91c2-4873-8a2f-afb06862effa/20429f56-cb95-462e-8b1a-f8835bf745b5/Untitled.png?id=8f229af1-47fd-43ed-b963-a0c3dffacc6a&table=block&spaceId=7363233d-91c2-4873-8a2f-afb06862effa&expirationTimestamp=1705276800000&signature=fOJFkG0rLmuG59rkyU5Xh98EMElPBUaGRblaXaBoyT8&downloadName=Untitled.png)
+![example]()
 
 [참고자료](https://riverkangg.github.io/nlp/nlp-bertWordEmbedding/)
 
@@ -230,7 +226,7 @@ print(embeddings)
     
 - SentenceTransformer [참고자료](https://www.sbert.net/docs/publications.html)
     
-    ![Untitled](https://file.notion.so/f/f/7363233d-91c2-4873-8a2f-afb06862effa/08c96f5d-07d7-4b08-9d43-ea130c16fb44/Untitled.png?id=3b33b392-7adc-4a25-ae22-b4a2eecae379&table=block&spaceId=7363233d-91c2-4873-8a2f-afb06862effa&expirationTimestamp=1705276800000&signature=WsbNh8sC7TAS8-4VlRi1zKyr2ElHtJaIdw-EQ3Da6TY&downloadName=Untitled.png)
+    ![Untitled]( )
     
 
 ```jsx
@@ -279,7 +275,7 @@ model = AutoModelForSequenceClassification.from_pretrained('bert-base-multilingu
         → epoch = 2 에서 학습한 수준과 epoch 10에서 학습한 데이터 패턴이 크게 다르지 않음
         
 
-![example](https://file.notion.so/f/f/7363233d-91c2-4873-8a2f-afb06862effa/468c2a06-ddaa-46f1-b7b3-1340e4942c11/Untitled.png?id=83110fd2-d60f-40d4-93a4-24d421138220&table=block&spaceId=7363233d-91c2-4873-8a2f-afb06862effa&expirationTimestamp=1705276800000&signature=ItBmPlrAj29I8sYiZ4Yq66eXJ-Jxu_h_1AsrJdyaU4c&downloadName=Untitled.png)
+![example]( )
 
 ```jsx
 from sklearn.model_selection import train_test_split
@@ -320,15 +316,15 @@ accuracy = accuracy_score(X_test_label, predictions)
 
 - [RandomForestClassifier](https://medium.com/analytics-vidhya/random-forest-classifier-and-its-hyperparameters-8467bec755f6)
 
-![example](https://file.notion.so/f/f/7363233d-91c2-4873-8a2f-afb06862effa/a7d1dc1c-7435-4504-b588-eb5c0d922da2/Untitled.png?id=d5b85f69-a247-45a6-ab2d-f701323f7c21&table=block&spaceId=7363233d-91c2-4873-8a2f-afb06862effa&expirationTimestamp=1705276800000&signature=msZHvHzGNoHkE3gmfudM2o1zA2OlshomyGyoWVjQx-w&downloadName=Untitled.png)
+![example]( )
 
 - [LogisticRegression](https://medium.com/@martinpella/logistic-regression-from-scratch-in-python-124c5636b8ac)
 
-![Untitled](https://file.notion.so/f/f/7363233d-91c2-4873-8a2f-afb06862effa/387fe23d-bbe7-4ee3-9a7f-5e0c02df1d48/Untitled.png?id=dd3f6f40-f95e-4c1e-9ac6-3151f4fcb2d4&table=block&spaceId=7363233d-91c2-4873-8a2f-afb06862effa&expirationTimestamp=1705276800000&signature=DekSWhnMDkOsPxWCLAjBhbL30qKzycb9DBz9oy9GxDQ&downloadName=Untitled.png)
+![Untitled]( )
 
 - [SVC](https://scikit-learn.org/stable/modules/svm.html)
 
-![example](https://file.notion.so/f/f/7363233d-91c2-4873-8a2f-afb06862effa/77dd4d82-af08-46ed-9364-c7d6b6e75d1f/Untitled.png?id=6f65df95-3bde-4ba3-b2fa-bc1ee7b4a61a&table=block&spaceId=7363233d-91c2-4873-8a2f-afb06862effa&expirationTimestamp=1705276800000&signature=KqxmezJhqPlLeYFiwp4vpbPz9_REoeIsL8T6Qo6WRlI&downloadName=Untitled.png)
+![example] )
 
 ## 4. 명사/형용사 추출
 
@@ -490,7 +486,7 @@ get_verb: `['받은', '했다고', '왔어']`
 | 하찮은 만남들에 대한 예의 | 88 |
 - 글 속 단어 개수
 
-![example](https://file.notion.so/f/f/7363233d-91c2-4873-8a2f-afb06862effa/c60c4e48-605d-41b5-ad4f-d5006f7b0c4b/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-10-25_17.38.52.png?id=975a9c22-fd17-4a1d-a33d-28e2491e7b5f&table=block&spaceId=7363233d-91c2-4873-8a2f-afb06862effa&expirationTimestamp=1705276800000&signature=vRXOpnWa_LOVqenqwDZAjzCG7xAzWwz8CHhnF-hYglY&downloadName=%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-10-25_17.38.52.png)
+![example]( )
 
 - 문장 기준 최고 감정
     - 에세이를 구성하는 문장의 감정 라벨을 집계
@@ -498,7 +494,7 @@ get_verb: `['받은', '했다고', '왔어']`
     
     → 문장 분류 모델의 정확도 상승시, 해당 방식으로 에세이 별 ‘주요 감정’ 을 쉽게 구분 및 비교할 수 있음
     
-    ![example](https://file.notion.so/f/f/7363233d-91c2-4873-8a2f-afb06862effa/6ea44233-f81c-48ce-8a7a-73e8bd3ccd02/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-10-25_17.40.49.png?id=8316df08-eb71-4139-ba24-8ca824ea3850&table=block&spaceId=7363233d-91c2-4873-8a2f-afb06862effa&expirationTimestamp=1705276800000&signature=FUk9KSwaHtgOvXT4fYmwHUhidJEhOQj_lECcBE1cqlw&downloadName=%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-10-25_17.40.49.png)
+    ![example]( )
     
 - **단어 기준 최고 감정 / 단어 별 감정 개수**
     - 명사와 형용사를 합쳤을 경우, 아니라/없는 등의 단어들이 상위에 위치
@@ -509,7 +505,7 @@ get_verb: `['받은', '했다고', '왔어']`
 
 [명사 + 형용사]
 
-![example](%E1%84%80%E1%85%B5%E1%86%BA%E1%84%8C%E1%85%A1%E1%86%AB%E1%84%89%E1%85%B5%E1%86%B7%202+3%20%E1%84%8E%E1%85%AC%E1%84%8C%E1%85%A9%E1%86%BC%20%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20f752e38993954a73adb6de055145b1ce/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-10-25_17.41.23.png)
+![example]( )
 
 - 가장 다채로운 단어를 사용한 감정은 ? (감정 별 문장 1건당 단어)
     - [불안] 단어 종류가 954건으로 가장 많음
@@ -529,7 +525,7 @@ get_verb: `['받은', '했다고', '왔어']`
     
     → 빈도가 높은 단어들이 상위에 존재하여, 해당 방식으로 추출 뒤 tfidf 등의 빈도 기반 스코어로 단어 추가 정렬이 가능해보임
     
-    ![example](https://file.notion.so/f/f/7363233d-91c2-4873-8a2f-afb06862effa/89ee531a-c4af-477a-aafa-1c9d834d54d4/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-10-25_18.21.16.png?id=61fc8e98-fc71-406d-8e78-fc5a86e6b871&table=block&spaceId=7363233d-91c2-4873-8a2f-afb06862effa&expirationTimestamp=1705276800000&signature=jFbH-CBTRc7TfrF6s6Nfkm42FvSb5XacXBQS9v1RM2E&downloadName=%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-10-25_18.21.16.png)
+    ![example]( )
     
 - 가장 복잡한 감정을 만들어낸 단어는? (단어 1건당 유니크 감정)
     - 있는, 없는, 있는, 있다 등이 가장 많이 등장하였고, 그에 따른 감정종류도 가장 많음
@@ -537,17 +533,13 @@ get_verb: `['받은', '했다고', '왔어']`
     
     → 복잡한 감정의 기준을 다시 제시하고 (예: 상충되는 감정 ) 그에 따른 ‘복잡한 감정' 과 ‘단어’ 조합을 찾아볼 수 있음
     
-    ![example](https://file.notion.so/f/f/7363233d-91c2-4873-8a2f-afb06862effa/0115a3b4-743f-4bae-8574-8c4526d9fbe8/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-10-25_18.21.23.png?id=39ddc6f0-18b2-4fc7-b40b-57178e768748&table=block&spaceId=7363233d-91c2-4873-8a2f-afb06862effa&expirationTimestamp=1705276800000&signature=UKygjD17WncBhmQE77OGsnHHurZfLNWZ4aZM5hptK0o&downloadName=%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-10-25_18.21.23.png)
+    ![example]( )
     
-    ![example](https://file.notion.so/f/f/7363233d-91c2-4873-8a2f-afb06862effa/95f408c3-9f28-4faf-ba65-0819cd2fe0a7/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-10-25_18.22.43.png?id=20d6de65-948c-4a1c-ab8e-e2c8718a3f86&table=block&spaceId=7363233d-91c2-4873-8a2f-afb06862effa&expirationTimestamp=1705276800000&signature=KX4jpP_VFmCgXOyTkZ6VX9BENUpNCojgnFvyxf-imU0&downloadName=%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-10-25_18.22.43.png)
+    ![example]( )
     
 - 그 단어를 쓸 때 어떤 감정이 많이 올라왔을까? (단어 1건당 최다 감정)
     - [좋아하는] 단어의 경우, 불안 :2 , 기쁨 : 1 , 상처 : 1
     - [부끄러운] 단어의 경우, 당황 : 4
     - [나약한] 단어의 경우 기쁨 : 1
     
-<<<<<<< HEAD
-    ![example](https://file.notion.so/f/f/7363233d-91c2-4873-8a2f-afb06862effa/6989919b-9f1a-4667-971c-8634e6dee3ac/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-10-25_18.30.48.png?id=51dc72d4-05b0-4f12-b47c-bf2b2c6c7314&table=block&spaceId=7363233d-91c2-4873-8a2f-afb06862effa&expirationTimestamp=1705276800000&signature=vsFRnc5zJLz0n7K5N04oldUaq6oUqtZXBgMsz64nFBo&downloadName=%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-10-25_18.30.48.png)
-=======
-    ![%E1%84%80%E1%85%B5%E1%86%BA%E1%84%8C%E1%85%A1%E1%86%AB%E1%84%89%E1%85%B5%E1%86%B7%202+3%20%E1%84%8E%E1%85%AC%E1%84%8C%E1%85%A9%E1%86%BC%20%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20f752e38993954a73adb6de055145b1ce/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-10-25_18.30.48.png](%E1%84%80%E1%85%B5%E1%86%BA%E1%84%8C%E1%85%A1%E1%86%AB%E1%84%89%E1%85%B5%E1%86%B7%202+3%20%E1%84%8E%E1%85%AC%E1%84%8C%E1%85%A9%E1%86%BC%20%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20f752e38993954a73adb6de055145b1ce/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-10-25_18.30.48.png)
->>>>>>> 5d87ca73a04df5c4525844cc75ab9330cd181204
+    ![example]( )
