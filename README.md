@@ -1,5 +1,5 @@
 
-# github에 NLP 잔디심기 2👋   
+# github에 NLP 잔디심기 4👋   
 
 스터디 자료입니다   
 
@@ -29,13 +29,12 @@ NLP로 어떤 현실 문제를 해결하는지 조사, 분석한 내용 + 내 �
 
 ### 2. 만들기 (힘 닿는 곳 까지)   
 
-참가자들의 솔루션들은 각각의 REPO에 저장되고, 완성된 프로젝트들은 huggingface spaces에 배포합니다. 
+참가자들의 솔루션들은 각각의 REPO에 저장됩니다. (공개를 원하는 분에 한해서!)
 
-- [20230405](https://github.com/springcoolers/weekly-presentation/20230405) (1주차) : semantle 일본어 버전
+- [20240000] (1주차) : 
 
 --- 
 
-(2023 봄 Pseudolab Openlab 6기) : 🔭 스터디 일정은 이 [링크](https://pseudo-lab.com/NLP-2-c5158177879c4bcab6e4106c053b44f5
-)를 확인하세요   
+(2024 봄 Pseudolab 8기) : 🔭 스터디 일정은 이 [링크](https://pseudo-lab.com/NLP-4-58235298419840d8aad2bc96b5f44463?pvs=4)를 확인하세요   
 
 
